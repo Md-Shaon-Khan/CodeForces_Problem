@@ -1,0 +1,49 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    
+
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n;
+        cin>>n;
+
+        int array[n];
+int even=0,odd=0;
+        for(int i=0;i<n;i++)
+        {
+            cin>>array[i];
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(array[i]%2==0)
+            {
+                even += array[i];
+            }
+            else
+            {
+                odd += array[i];
+            }
+            
+            
+        }
+
+        if(even>odd)
+        {
+            cout<<"YES"<<endl;
+        }
+        else
+        {
+            cout<<"NO"<<endl;
+        }
+
+      
+
+    }
+
+
+    return 0;
+}
